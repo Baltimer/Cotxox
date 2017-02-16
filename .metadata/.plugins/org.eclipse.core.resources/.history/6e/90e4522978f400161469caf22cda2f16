@@ -5,6 +5,8 @@ import org.foobarspam.cotxox.tarifa.*;
 
 public class Carrera {
 	// ---------- Atributos ----------
+	private int tiempoEsperado = 0;
+	private int tiempoCarrera = 0;
 	private double costeTotal = 0;
 	private Conductor conductor;
 	private String tarjetaCredito = null;

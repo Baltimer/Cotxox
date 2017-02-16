@@ -31,7 +31,7 @@ public class Tarifa {
 		return minutos * getCosteMinuto();
 	}
 	
-	public static double getCosteTotalEsperado(double distanciaEsperada, double tiempoEsperado){
+	public static double getCosteTotalEsperado(double tiempoEsperado, double distanciaEsperada){
 		double totalCarrera = tiempoEsperado*getCosteMinuto() + distanciaEsperada * getCosteMilla();
 		if (totalCarrera < 5){
 			totalCarrera = 5;

@@ -25,7 +25,6 @@ public class PoolConductores {
 		while(getPoolConductores().get(numeroConductor).getOcupado() != false){
 			numeroConductor = ThreadLocalRandom.current().nextInt(getPoolConductores().size());
 		}
-		getPoolConductores().get(numeroConductor).setOcupado(true);
 		return getPoolConductores().get(numeroConductor);
 	}
 }

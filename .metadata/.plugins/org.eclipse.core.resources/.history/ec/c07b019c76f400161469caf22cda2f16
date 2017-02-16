@@ -5,14 +5,15 @@ import org.foobarspam.cotxox.tarifa.*;
 
 public class Carrera {
 	// ---------- Atributos ----------
-	private double costeTotal = 0;
+	private int tiempoEsperado = 0;
+	private int tiempoCarrera = 0;
+	private double costeTotal = 0;;
 	private Conductor conductor;
 	private String tarjetaCredito = null;
 	private String origen = null;
 	private String destino = null;
 	private double distancia = 0;
 	private int tiempoEsperadoMinutos = 0;
-	private int propina = 0;
 	
 	
 	// ---------- Constructores ----------
@@ -36,12 +37,6 @@ public class Carrera {
 	public void setConductor(Conductor conductor){
 		this.conductor = conductor;
 	}
-	public void setCosteTotal(double costeTotal){
-		this.costeTotal = costeTotal;
-	}
-	public void setPropina(int propina){
-		this.propina = propina;
-	}
 	
 	public String getTarjetaCredito(){
 		return this.tarjetaCredito;
@@ -61,12 +56,6 @@ public class Carrera {
 	public Conductor getConductor(){
 		return this.conductor;
 	}
-	public double getCosteTotal(){
-		return this.costeTotal;
-	}
-	public int getPropina(){
-		return this.propina;
-	}
 	
 	
 	// ---------- Métodos ----------
@@ -78,15 +67,7 @@ public class Carrera {
 		setConductor(conductores.asignarConductor());
 	}
 	
-	public void realizarPago(double pago){
-		setCosteTotal(pago);
-	}
-	
-	public void recibirPropina(int propina){
-		setPropina(propina);
-	}
-	
-	public void liberarConductor(){
-		getConductor().setOcupado(false);
+	public void realizadPago(double pago){
+		
 	}
 }
