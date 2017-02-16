@@ -13,7 +13,6 @@ INDEX VERSION 1.129+C:\Users\lluis\Cotxox\.metadata\.plugins\org.eclipse.jdt.cor
 1539866187.index
 543038442.index
 1199826107.index
-1697390877.index
 30881555.index
 194205294.index
 3643810303.index
