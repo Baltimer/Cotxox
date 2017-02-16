@@ -23,8 +23,33 @@ public class Conductor {
 	public void setValoracionMedia(double valoracionMedia){
 		this.valoracionMedia = valoracionMedia;
 	}
+	public void setOcupado(Boolean estado){
+		this.ocupado = estado;
+	}
+	public void setMatricula(String matricula){
+		this.matricula = matricula;
+	}
+	public void setModelo(String modelo){
+		this.modelo = modelo;
+	}
+	
 	public String getNombre(){
 		return this.nombre;
+	}
+	public Boolean getOcupado(){
+		return this.ocupado;
+	}
+	public double getValoracionMedia(){
+		return this.valoracionMedia;
+	}
+	public String getModelo(){
+		return this.modelo;
+	}
+	public String getMatricula(){
+		return this.matricula;
+	}
+	public double getValoracion(){
+		return this.valoracionMedia;
 	}
 	
 	// ---------- Métodos ----------
@@ -36,5 +61,7 @@ public class Conductor {
 		}
 		setValoracionMedia(valoracionTotal/getValoraciones().size());
 	}
-	
+	public Boolean isOcupado(){
+		return getOcupado();
+	}
 }

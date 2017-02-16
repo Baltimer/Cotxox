@@ -1,6 +1,7 @@
 package org.foobarspam.cotxox.conductores;
 
 import java.util.ArrayList;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class PoolConductores {
 	// ---------- Atributos ----------
@@ -18,7 +19,12 @@ public class PoolConductores {
 	}
 	
 	// ---------- Métodos ----------
-	public void asignarConductor(){
-		
+	public Conductor asignarConductor(){
+		// Nos aseguramos que sea un conductor aleatorio, para que no perdamos trabajadores.
+		int numeroConductor = ThreadLocalRandom.current().nextInt(getPoolConductores().size());
+		while(getPoolConductores().get(numeroConductor).getOcupado() != false){
+			numeroConductor = ThreadLocalRandom.current().nextInt(getPoolConductores().size());
+		}
+		return getPoolConductores().get(numeroConductor);
 	}
 }

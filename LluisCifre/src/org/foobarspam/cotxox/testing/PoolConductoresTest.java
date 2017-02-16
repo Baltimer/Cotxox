@@ -23,11 +23,17 @@ public class PoolConductoresTest {
 	}
 	
 	@Test
-	public void test() {
+	public void constructorTest() {
 		assertEquals("Lluis", poolConductores.getPoolConductores().get(0).getNombre());
 		for (Conductor conductor : poolConductores.getPoolConductores()){
 			System.out.println(conductor.getNombre());
 		}
+	}
+	
+	@Test
+	public void asignarConductorTest(){
+		conductor2.setOcupado(true);
+		assertEquals(conductor1, poolConductores.asignarConductor());
 	}
 
 }
