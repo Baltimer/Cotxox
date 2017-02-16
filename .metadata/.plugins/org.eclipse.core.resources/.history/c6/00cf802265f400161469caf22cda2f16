@@ -1,0 +1,23 @@
+package org.foobarspam.cotxox.testing;
+
+import static org.junit.Assert.*;
+import org.foobarspam.cotxox.tarifa.*;
+import org.foobarspam.cotxox.carrera.*;
+import org.junit.Before;
+import org.junit.Test;
+
+public class TarifaTest {
+	Carrera carrera;
+	Tarifa tarifa;
+	@Before
+	public void setUp(){
+		String tarjetaCredito = "12345678";
+		carrera = new Carrera(tarjetaCredito);
+	}
+	
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -30,7 +30,6 @@ public class CarreraTest {
 		assertEquals(origen, carrera.getOrigen());
 		// Método assertEquals (doube, double) está en desuso.
 		System.out.println("La distancia debería ser 7.75, y es: " + distancia);
-		assertEquals(tiempoEsperadoMinutos, carrera.getTiempoEsperadoMinutos());
 	}
 
 }

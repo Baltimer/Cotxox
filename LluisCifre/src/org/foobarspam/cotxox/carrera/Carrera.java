@@ -47,7 +47,7 @@ public class Carrera {
 		return this.distancia;
 	}
 	public int getCosteEsperado(){
-		return Tarifa.getCosteTotalEsperado(Carrera carrera));
+		return Tarifa.getCosteTotalEsperado();
 	}
 	
 	// ---------- Métodos ----------
