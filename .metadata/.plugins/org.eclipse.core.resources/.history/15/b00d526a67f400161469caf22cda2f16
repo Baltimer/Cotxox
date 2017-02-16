@@ -49,7 +49,7 @@ public class Carrera {
 	public int getTiempoEsperado(){
 		return this.tiempoEsperadoMinutos;
 	}
-	public double getCosteEsperado(){
+	public int getCosteEsperado(){
 		return Tarifa.getCosteTotalEsperado(getDistancia(), getTiempoEsperado());
 	}
 	

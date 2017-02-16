@@ -46,10 +46,10 @@ public class Carrera {
 	public double getDistancia(){
 		return this.distancia;
 	}
-	public int getTiempoEsperado(){
+	public double getTiempoEsperado(){
 		return this.tiempoEsperadoMinutos;
 	}
-	public double getCosteEsperado(){
+	public int getCosteEsperado(){
 		return Tarifa.getCosteTotalEsperado(getDistancia(), getTiempoEsperado());
 	}
 	

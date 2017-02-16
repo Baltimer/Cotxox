@@ -46,11 +46,8 @@ public class Carrera {
 	public double getDistancia(){
 		return this.distancia;
 	}
-	public int getTiempoEsperado(){
-		return this.tiempoEsperadoMinutos;
-	}
-	public double getCosteEsperado(){
-		return Tarifa.getCosteTotalEsperado(getDistancia(), getTiempoEsperado());
+	public int getCosteEsperado(){
+		return Tarifa.getCosteTotalEsperado();
 	}
 	
 	// ---------- Métodos ----------

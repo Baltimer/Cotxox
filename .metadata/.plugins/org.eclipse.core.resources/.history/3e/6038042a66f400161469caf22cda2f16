@@ -1,5 +1,6 @@
 package org.foobarspam.cotxox.testing;
 
+import static org.junit.Assert.*;
 import org.foobarspam.cotxox.tarifa.*;
 import org.foobarspam.cotxox.carrera.*;
 import org.junit.Before;
@@ -31,10 +32,4 @@ public class TarifaTest {
 		System.out.println("Tiempo debería ser 7.0 y es: " + tarifa.getCosteTiempo(minutos));
 	}
 
-	@Test
-	public void getCosteTotalEsperadoTest(){
-		double distancia = 5;
-		int minutos = 20;
-		System.out.println("Tiempo total esperado debería ser 13.75 y es: " + Tarifa.getCosteTotalEsperado(minutos, distancia));
-	}
 }

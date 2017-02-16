@@ -2,9 +2,9 @@ package org.foobarspam.cotxox.tarifa;
 
 public class Tarifa {
 	// ---------- Atributos ----------
-//	private String id = null;
-	private final static double costeMilla = 1.35;
-	private final static double costeMinuto = 0.35;
+	private String id = null;
+	private final double costeMilla = 1.35;
+	private final double costeMinuto = 0.35;
 	private final double porcentajeComision = 20;
 	
 	// ---------- Constructores ----------
@@ -12,11 +12,11 @@ public class Tarifa {
 		
 	}
 	// ---------- Setters y Getters ----------
-	public static double getCosteMilla(){
-		return costeMilla;
+	public double getCosteMilla(){
+		return this.costeMilla;
 	}
-	public static double getCosteMinuto(){
-		return costeMinuto;
+	public double getCosteMinuto(){
+		return this.costeMinuto;
 	}
 	public double getPorcentajeComision(){
 		return this.porcentajeComision;
@@ -31,11 +31,7 @@ public class Tarifa {
 		return minutos * getCosteMinuto();
 	}
 	
-	public static double getCosteTotalEsperado(double tiempoEsperado, double distanciaEsperada){
-		double totalCarrera = tiempoEsperado*getCosteMinuto() + distanciaEsperada * getCosteMilla();
-		if (totalCarrera < 5){
-			totalCarrera = 5;
-		}
-		return totalCarrera;
+	public double getCosteTotalEsperado(double tiempoEsperado, double distanciaEsperada){
+		return (tiempoEsperado*getCosteMinuto() * distanciaEsperada * getCosteMilla());
 	}
 }

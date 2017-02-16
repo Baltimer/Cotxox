@@ -16,7 +16,7 @@ public class Tarifa {
 		return costeMilla;
 	}
 	public static double getCosteMinuto(){
-		return costeMinuto;
+		return this.costeMinuto;
 	}
 	public double getPorcentajeComision(){
 		return this.porcentajeComision;
