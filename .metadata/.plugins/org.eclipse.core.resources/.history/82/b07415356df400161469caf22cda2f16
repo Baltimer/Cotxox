@@ -1,0 +1,30 @@
+package org.foobarspam.cotxox.testing;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.foobarspam.cotxox.conductores.*;
+
+public class PoolConductoresTest {
+	Conductor conductor1;
+	Conductor conductor2;
+	PoolConductores poolConductores;
+	Conductor[] conductores = new Conductor[2];
+	@Before
+	public void setUp(){
+		conductor1 = new Conductor("Lluis");
+		conductor2 = new Conductor("David");
+		conductores[0] = conductor1;
+		conductores[1] = conductor2;
+		PoolConductores poolConductores = new PoolConductores(conductores);
+	}
+	
+	@Test
+	public void test() {
+		for (Conductor conductor : poolConductores.getPoolConductores()){
+			System.out.println(conductor.getNombre());
+		}
+	}
+
+}

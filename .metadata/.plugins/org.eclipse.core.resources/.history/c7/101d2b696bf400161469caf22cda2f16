@@ -1,0 +1,37 @@
+package org.foobarspam.cotxox.conductores;
+
+import java.util.ArrayList;
+
+public class Conductor {
+	// ---------- Atributos ----------
+	private String nombre = null;
+	private String modelo = null;
+	private String matricula = null;
+	private double valoracionMedia = 0;
+	private ArrayList<Short> valoraciones = new ArrayList<>();
+	private Boolean ocupado = false;
+	
+	// ---------- Constructores ----------
+	public Conductor(){
+		
+	}
+	
+	// ---------- Setters y Getters ----------
+	public ArrayList<Short> getValoraciones(){
+		return this.valoraciones;
+	}
+	public double setValoracionMedia(double valoracionMedia){
+		return this.valoracionMedia = valoracionMedia;
+	}
+	
+	// ---------- Métodos ----------
+	public void setValoracion(short puntuacion){
+		getValoraciones().add(puntuacion);
+		double valoracionTotal= 0;
+		for (short valoracion : getValoraciones()){
+			valoracionTotal += valoracion;
+		}
+		setValoracionMedia(valoracionTotal/getValoraciones().size());
+	}
+	
+}

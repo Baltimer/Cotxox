@@ -1,0 +1,17 @@
+package org.foobarspam.cotxox.conductores;
+
+public class Conductor {
+	// ---------- Atributos ----------
+	private String nombre = null;
+	
+	
+	// ---------- Constructores ----------
+	public Conductor(){
+		
+	}
+	
+	// ---------- Setters y Getters ----------
+	
+	
+	// ---------- Métodos ----------
+}

@@ -49,9 +49,15 @@ public class Carrera {
 	public int getTiempoEsperado(){
 		return this.tiempoEsperadoMinutos;
 	}
+	
+	
+	// ---------- Métodos ----------
 	public double getCosteEsperado(){
 		return Tarifa.getCosteTotalEsperado(getDistancia(), getTiempoEsperado());
 	}
 	
-	// ---------- Métodos ----------
+	public void asignarConductor(Poolconductores conductores){
+		
+	}
+	
 }

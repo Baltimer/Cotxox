@@ -1,0 +1,8 @@
+package org.foobarspam.cotxox.conductores;
+
+public class PoolConductores {
+
+	public PoolConductores(Conductor[] conductores){
+		
+	}
+}

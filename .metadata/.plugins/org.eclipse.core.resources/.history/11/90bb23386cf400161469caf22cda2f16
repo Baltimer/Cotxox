@@ -1,0 +1,27 @@
+package org.foobarspam.cotxox.testing;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.foobarspam.cotxox.conductores.*;
+
+public class PoolConductoresTest {
+	Conductor conductor1;
+	Conductor conductor2;
+	PoolConductores poolConductores;
+	Conductor[] conductores;
+	@Before
+	public void setUp(){
+		conductor1 = new Conductor("Lluis");
+		conductor2 = new Conductor("David");
+		conductor[0] = conductor1;
+		conductores[1] = conductor2;
+	}
+	
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}
