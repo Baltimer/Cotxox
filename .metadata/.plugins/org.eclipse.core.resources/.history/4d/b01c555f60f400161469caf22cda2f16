@@ -1,0 +1,31 @@
+package org.foobarspam.cotxox.testing;
+
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.foobarspam.cotxox.carrera.*;
+
+public class CarreraTest {
+	Carrera carrera;
+	
+	@BeforeClass
+	public void setUp(){
+		String tarjetaCredito = "12345678";
+		carrera = new Carrera(tarjetaCredito);
+	}
+	
+	@Test
+	public void settersYGettersTest() {
+		String origen = "Aeroport Son Sant Joan";
+		String destino= "Magaluf";
+		double distancia = 7.75;
+		int tiempoEsperadoMinutos = 10;
+		
+		carrera.setDestino(destino);
+		carrera.setDistancia(distancia);
+		carrera.setOrigen(origen);
+		carrera.setTiempoEsperado(tiempoEsperadoMinutos);
+	}
+
+}

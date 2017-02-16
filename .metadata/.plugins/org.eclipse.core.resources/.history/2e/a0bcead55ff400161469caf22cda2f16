@@ -1,0 +1,20 @@
+package org.foobarspam.cotxox.testing;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.foobarspam.cotxox.carrera.*;
+
+public class CarreraTest {
+	Carrera carrera;
+	
+	@BeforeClass
+	public void setUp(){
+		
+	}
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

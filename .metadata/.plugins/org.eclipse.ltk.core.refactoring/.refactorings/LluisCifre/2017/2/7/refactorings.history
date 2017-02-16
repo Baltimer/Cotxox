@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;org.foobarspam.cotxox.tarifa.Tarifas&apos; to &apos;Tarifa&apos;&#x0D;&#x0A;- Original project: &apos;LluisCifre&apos;&#x0D;&#x0A;- Original element: &apos;org.foobarspam.cotxox.tarifa.Tarifas&apos;&#x0D;&#x0A;- Renamed element: &apos;org.foobarspam.cotxox.tarifa.Tarifa&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Tarifas&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;org.foobarspam.cotxox.tarifa{Tarifas.java[Tarifas" matchStrategy="1" name="Tarifa" qualified="false" references="true" similarDeclarations="false" stamp="1487259228380" textual="false" version="1.0"/>
+</session>

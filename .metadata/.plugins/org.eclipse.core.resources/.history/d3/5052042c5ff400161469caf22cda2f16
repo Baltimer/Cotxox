@@ -1,0 +1,27 @@
+package org.foobarspam.cotxox.carrera;
+import org.foobarspam.cotxox.conductores.*;
+public class Carrera {
+	// ---------- Atributos ----------
+	private tiempoEsperado;
+	private tiempoCarrera;
+	private double costeTotal;
+	private Conductor conductor = new Conductor();
+	private String tarjetaCredito;
+	private String origen = null;
+	private String destino = null;
+	private double distancia = 0;
+	private int tiempoEsperadoMinutos = 0;
+	
+	
+	// ---------- Constructores ----------
+	public Carrera(String tarjetaCredito){
+		this.tarjetaCredito = tarjetaCredito;
+	}
+	
+	// ---------- Setters y Getters ----------
+	public setOrigen(String origen){
+		this.origen = origen;
+	}
+	
+	// ---------- Métodos ----------
+}

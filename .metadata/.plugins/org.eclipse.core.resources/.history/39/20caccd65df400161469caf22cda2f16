@@ -1,0 +1,16 @@
+package org.foobarspam.cotxox.tarifa;
+
+public class Tarifa {
+	// ---------- Atributos ----------
+	private 
+	
+	// ---------- Constructores ----------
+	public Carrera(String tarjetaCredito){
+		
+	}
+	
+	// ---------- Setters y Getters ----------
+	
+	
+	// ---------- Métodos ----------
+}

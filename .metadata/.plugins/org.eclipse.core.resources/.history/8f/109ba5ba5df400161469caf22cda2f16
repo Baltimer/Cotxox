@@ -1,0 +1,9 @@
+package org.foobarspam.cotxox.carrera;
+
+public class Carrera {
+	// ---------- Atributos ----------
+	private 
+	public Carrera(String tarjetaCredito){
+		
+	}
+}
