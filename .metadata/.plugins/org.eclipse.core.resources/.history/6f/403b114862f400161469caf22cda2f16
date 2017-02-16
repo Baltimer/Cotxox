@@ -1,7 +1,5 @@
 package org.foobarspam.cotxox.carrera;
 import org.foobarspam.cotxox.conductores.*;
-import org.foobarspam.cotxox.tarifa.*;
-
 public class Carrera {
 	// ---------- Atributos ----------
 	private int tiempoEsperado;
@@ -47,7 +45,7 @@ public class Carrera {
 		return this.distancia;
 	}
 	public int getCosteEsperado(){
-		return Tarifa.getCosteTotalEsperado(Carrera carrera));
+		return 0;
 	}
 	
 	// ---------- Métodos ----------

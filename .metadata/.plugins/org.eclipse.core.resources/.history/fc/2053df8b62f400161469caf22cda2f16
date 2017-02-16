@@ -1,0 +1,17 @@
+package org.foobarspam.cotxox.tarifa;
+
+public class Tarifa {
+	// ---------- Atributos ----------
+	public Tarifa(){
+		
+	}
+	
+	// ---------- Constructores ----------
+
+	
+	// ---------- Setters y Getters ----------
+	
+	
+	// ---------- Métodos ----------
+	public static double getCosteTotalEsperado(Carrera carrera);
+}
